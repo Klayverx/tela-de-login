@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f3f80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.icon-login {
+  color: aliceblue;
+  width: 25px;
+  margin: 0px 10px;
+}
+
+.login h1 {
+  align-self: center;
+  color: aliceblue;
+  letter-spacing: 0.15rem;
+}
+
+.login-container {
+  width: 330px;
+  height: auto;
+  position: relative;
+  background-color: #011725;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 0 15px 0 15px;
+  box-shadow: 0px 25px 36px 12px rgba(0, 0, 0, 0.35);
+}
+
+.input-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 18px 0;
+  padding: 5px 0;
+  border-radius: 2px;
+  border-bottom: 2px solid aliceblue;
+}
+
+.input-container::after, .input-container::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #3E97CF;
+  transition: .4s;
+}
+
+.input-container::after {
+  right: 50%;
+}
+
+.input-container::before {
+  left: 50%;
+}
+
+.input-container.focus .i .icon {
+  color: #3E97CF;
+}
+
+.input-container.focus div h2 {
+  top: -10px;
+  font-size: 0.75rem;
+}
+
+.input-container.focus::after, .input-container.focus::before {
+  width: 50%;
+}
+
+.input-container.user {
+  margin-top: 0px;
+}
+
+.i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: aliceblue;
+  width: 18px;
+  transition: .3s;
+}
+
+.input-container > div {
+  position: relative;
+  height: 22px;
+}
+
+.input-container > div h2 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transform: translateY(-50%);
+  color: aliceblue;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+}
+
+.input-container.pass .eye {
+  width: 18px;
+  color: aliceblue;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+
+.input-container.pass .eyeOff {
+  width: 18px;
+  color: aliceblue;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+
+#show-hide {
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 0.7rem;
+  transition: .2s;
+}
+
+a:hover {
+  color: #3E97CF;
+}
+
+.container-verification {
+  margin: 10px auto auto 10px;
+}
+
+.container-verification p {
+  margin-top: 6px;
+}
+
+.container-verification p span{
+  font-size: 1rem;
+  color: #bdcad6;
+  margin-left: 28px;
+}
+
+.fa-times {
+  visibility: hidden;
+}
+
+.fa-times {
+  visibility: visible;
+}
+
+.container-verification p .icon {
+  position: absolute;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  margin-top: 1.2rem;
+  margin-bottom: 1.9rem;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #0f3e80;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.13rem;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(5px);
+  box-shadow: 0px -3px 3px 3px rgba(0, 0, 0, .2);
+}
