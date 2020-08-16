@@ -22,37 +22,39 @@
     </div>
 
 
-    <div class="input-container user">
-      <div class="i">
-        <i data-feather="user" class="icon"></i>
+    <form>
+      <div class="input-container user">
+        <div class="i">
+          <i data-feather="user" class="icon"></i>
+        </div>
+        <div>
+          <h2>Username</h2>
+          <input type="text" class="input" autocomplete="username">
+        </div>
       </div>
-      <div>
-        <h2>Username</h2>
-        <input type="text" class="input">
-      </div>
-    </div>
-
-    <div class="input-container pass">
-      
-      <div class="i">
-        <i data-feather="lock" class="icon"></i>
-      </div>
-
-      <div class="teste">
-
-        <h2>Password</h2>
-
-        <input 
-          type="password" 
-          class="input password" 
-          oninput="textChange()" 
-          required
-        >
-      </div>
+  
+      <div class="input-container pass">
+        
+        <div class="i">
+          <i data-feather="lock" class="icon"></i>
+        </div>
+  
+        <div>
+          <h2>Password</h2>
+  
+            <input 
+              type="password" 
+              class="input password" 
+              oninput="textChange()"
+              autocomplete="current-password"
+              required
+            >
+        </div>
+    </form>
 
       <div class="eye" id="show-hide" onclick="showHide()">
-        <i data-feather="eye" class="eye" style="opacity: 1;"></i>
-        <i data-feather="eye-off" class="eyeOff" style="opacity: 0;"></i>
+        <i data-feather="eye" class="eye"></i>
+        <i data-feather="eye-off" class="eyeOff"></i>
       </div>
 
     </div>
@@ -64,25 +66,25 @@
       <p id="capital">
         <i data-feather="x-circle" class="icon fa-times"></i>
         <i data-feather="check-circle" class="icon fa-check"></i>
-        <span>Capital letters</span>
+        <span class="here">Capital letters</span>
       </p>
 
       <p id="char">
         <i data-feather="x-circle" class="icon fa-times"></i>
         <i data-feather="check-circle" class="icon fa-check"></i>
-        <span>Special characters</span>
+        <span class="here">Special characters</span>
       </p>
 
       <p id="num">
         <i data-feather="x-circle" class="icon fa-times"></i>
         <i data-feather="check-circle" class="icon fa-check"></i>
-        <span>Using numbers</span>
+        <span class="here">Using numbers</span>
       </p>
 
       <p id="more8">
         <i data-feather="x-circle" class="icon fa-times"></i>
         <i data-feather="check-circle" class="icon fa-check"></i>
-        <span>8+ characters</span>
+        <span class="here">8+ characters</span>
       </p>
 
     </div>
