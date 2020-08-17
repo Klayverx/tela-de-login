@@ -71,7 +71,7 @@ function textChange() {
     invalid('num', 'fa-check', 'fa-times');
   }
 
-  if (password.value.match(/[!@#$%^&*-]/) != null) {
+  if (password.value.match(/[!@#$%^&*-+={}[]´`~^.,<>;:]/) != null) {
     valid('char', 'fa-check', 'fa-times');
   }
   else {
